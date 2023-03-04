@@ -16,7 +16,7 @@ async function store() {
     
     for (let i = 0; i < filter.length; i++) {
         let button = document.createElement('button');
-        button.id ="Dimpal"
+        button.id ="Rajat"
         // let a = document.createElement('a');
         button.innerHTML = filter[i]
         // a.href = "index.html"
