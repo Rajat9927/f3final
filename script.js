@@ -27,10 +27,11 @@ function getMenu(query) {
   for (let i = 0; i < productData.length; i++) {
     let element = productData[i];
     let idNumber = element.id;
-    let prodTitle = element.name;
+    let prodTitle = element.title;
     let prodDescription = element.dsc;
     let prodPrice = element.price;
-    let prodRating = element.rate;
+    let prodRating = element.etag;
+    let publisher = element.publisher;
     let imageArr = element.imageLinks;
     //let prodCountry = element.country;
     //let imagee = imageArr[0];
@@ -46,10 +47,11 @@ function getMenu(query) {
   <img class="card-img-top" src="${imageArr}" alt="Card image cap">
   <div class="card-body">
     <p class="card-text"><b>ID:</b> ${idNumber}</p>
-    <h5 class="card-title"><b>Model:</b> ${prodTitle}</h5>
-    <p class="card-text"><b>Product Description:</b> ${prodDescription}</p>
+    <h5 class="card-title"><b>Book Title:</b> ${prodTitle}</h5>
+    <p class="card-text"><b>Author Name:</b> ${prodDescription}</p>
     <p class="card-text"><b>Price:</b> ${prodPrice}$</p>
     <p class="card-text"><b>Ratings:</b> ${prodRating}</p>
+    <p class="card-text"><b>Ratings:</b> ${publisher}</p>
   </div>
 </div>`
   addd.appendChild(cardtt);
